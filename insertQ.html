@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text File Creator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="bdy" style="background-color: lavender;"> 
+
+    <div id="para">
+        <textarea class="textarea1" id="textarea1" placeholder="Enter your paragraph here..."></textarea>
+    </div>
+
+    <!-- <div id="ques">
+        <textarea class="textarea2" id="textarea2" placeholder="Enter questions"></textarea>
+        
+    </div> -->
+
+    <div id="ques">
+      <form action="" method="POST">
+      <div id="formfield">
+        <textarea name="text" class="text" id="textarea2" placeholder="Enter question..." ></textarea>
+        <textarea name="text" class="text" id="textarea3" placeholder="Enter ONLY options(no A B C D or 1 2 ... etc.) (one option in each line)
+A
+B
+C
+D" ></textarea>
+      </div>
+    </form>
+      <div class="controls">
+        <button class="add" onclick="add()">Add</button>
+        <button class="remove" onclick="remove()">Remove</button>
+        <button class="submit" onclick="generateTextFile()">Submit</button>
+        <div id="download-link"></div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+    
+</body>
+</html>
